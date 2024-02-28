@@ -1,0 +1,326 @@
+:root{
+    --primary-color : red;
+    --second:rgb(164, 161, 251, 0.4);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Lora";
+}
+
+body{
+    margin: auto;
+}
+
+button{
+    transition: 0.2s all;
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    height: 12vh;
+    width: 100%;
+    border-bottom: 2px solid black;
+    color: var(--primary-color);
+}
+
+.navbar .menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.navbar .menu a{
+    color: black;
+    font-size: 20px;
+}
+
+.navbar .menu a:hover{
+    text-decoration: underline var(--primary-color);
+}
+
+.menu button{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+main section > h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#home{
+    background-image: url(./homebg.jpg);
+    height: 90vh;
+    background-size:cover;
+}
+
+#home .description{
+    font-size: 1.5em;
+    width: fit-content;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+#home .description .btns button{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#home .description p{
+    background: blur(10px);
+}
+
+#products{
+    text-align: center;
+    padding: 30px;
+    margin: 50px auto;
+}
+
+#products h1{
+    font-size: 3em;
+}
+
+#products .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+
+#products .cards .card img{
+    width: 300px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+#products .cards .card img:hover{
+    transform: scale(1.1);
+}
+
+#products .cards .card .bold{
+    font-weight: bold;
+}
+
+#products .cards .card .cut
+{
+    text-decoration: line-through;
+}
+
+#products .cards .card .clr{
+    color: var(--primary-color);
+}
+
+#products button{
+    border: 3px solid var(--primary-color);
+    background: transparent;
+    padding: 10px 20px;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#about{
+    padding: 30px;
+    display: flex;
+    margin-top: 170px;
+}
+
+#about h1{
+    text-transform: uppercase;
+    position: absolute;
+    left: -200px;
+    top: 10px;
+    font-size: 4rem;
+}
+
+#about .article{
+    padding-top: 100px;
+}
+
+#about p{
+    line-height: 1.6rem;
+    font-size: 20px;
+    text-align: justify;
+    padding: 5px 30px;
+}
+
+#about .about_image{
+    position: relative;
+    padding: 10px;
+}
+
+#about img{
+    width: 300px;
+}
+
+#about p .second{
+    background-color: var(--second);
+}
+
+#contact{
+    /* padding: 30px; */
+    min-height: 100vh;
+    text-align: center;
+    background-image: url(./contact2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#contact .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.form .flex{
+    display: flex;
+    gap: 30px;
+}
+
+#contact .contact_container{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px 80px;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact h1{
+    font-size: 3rem;
+}
+
+#contact .form input, .form textarea{
+    padding: 10px 20px; 
+    font-size: 20px;
+    width: 100%;
+    margin: 10px auto;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: white;
+    border-radius: 20px;
+}
+
+#contact .form button{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px; 
+    font-size: 20px;
+    margin: 10px;
+}
+
+#contact ::placeholder{
+    color: white;
+}
+
+#offers{
+    padding: 30px;
+    text-align: center;
+    height: 380px;
+    background-image: linear-gradient(to right, rgb(0, 208, 255), rgb(119, 96, 236));
+}
+
+#offers .container .card img{
+    width: 200px;
+    height: 200px;
+}
+
+#offers .container .card .offer{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+#offers h5{
+    font-size: 2em;
+    width: fit-content;
+    margin: auto;
+    color: white;
+}
+
+#offers h1{
+    font-size: 3em;
+    color: white;
+    text-transform: uppercase;
+}
+
+#offers .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;  
+    margin: 30px auto; 
+}
+
+#offers .container .card{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+#offers .container .card:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    text-align: center;
+    padding: 30px;
+}
+
+.footer .socials a{
+    color: black;
+    font-weight: bold;
+}
+
+.footer .flex, .footer .socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

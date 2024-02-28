@@ -1,0 +1,150 @@
+:root{
+    --clr: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:"Reggae One","Philosopher","Playfair Display",'Times New Roman', Times, serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 70px;
+    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); */
+}
+
+header nav a{
+    color: var(--clr);
+    font-size: 20px;
+}
+
+#home{
+    color: var(--clr);
+    height: 100vh;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#home :nth-child(2)
+{
+    font-family: "Londrina Outline";
+}
+
+#home .btn{
+    background-color: var(--clr);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px 0 20px 0;
+    transition: 0.2s all;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+#about{
+    height: 100vh;
+    padding: 30px 50px;
+    font-size: 20px;
+}
+
+#about h1, #skills h1, #projects h1, #blog h1, #contact h1{
+    text-align: right;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    font-size: 4rem;
+    padding-top: 30px;
+}
+
+#skills{
+    padding: 30px 50px;
+    font-size: 20px;
+}
+
+.skills_container .out{
+    width: 500px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #596275;
+}
+
+.skills_container .out .in{
+    border-radius: 20px;
+    height: 100%;
+    background-color: #fa5c7c;
+}
+
+#skills .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px auto;
+}
+
+#skills .card p{
+    width: 200px;
+}
+
+#projects{
+    padding: 30px 50px;
+    font-size: 16px;
+    height: 100vh;
+}
+
+#projects .project_card{
+    line-height: 30px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+#blog{
+    padding: 30px 50px;
+    font-size: 20px;
+    height: 100vh;
+}
+
+
+#contact{
+    padding: 30px 50px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--clr);
+}
+
+#contact i{
+    font-size: 30px;
+    margin: 10px;
+    color: var(--clr);
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+    line-height: 2em;
+    font-size: 20px;
+}
