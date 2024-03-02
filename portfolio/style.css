@@ -23,7 +23,6 @@ header nav{
     justify-content: center;
     gap: 30px;
     height: 70px;
-    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); */
 }
 
 header nav a{
@@ -64,17 +63,51 @@ header nav a{
 }
 
 #about{
-    height: 100vh;
     padding: 30px 50px;
     font-size: 20px;
 }
 
-#about h1, #skills h1, #projects h1, #blog h1, #contact h1{
+#about h1, #skills h1, #projects h1, #contact h1{
     text-align: right;
     margin-right: 100px;
     margin-bottom: 30px;
     font-size: 4rem;
     padding-top: 30px;
+}
+
+@media (max-width:870px){
+    #home{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:810px)
+{
+    #about h1, #skills h1, #projects h1, #contact h1{
+        font-size: 3rem;
+    }
+    #skills .card{
+        align-items: left;
+    }
+    #home{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:660px)
+{
+    #about h1, #skills h1, #projects h1, #contact h1{
+        font-size: 2rem;
+    }
+    #home{
+        font-size: 1.5rem;
+    }
+    p,a{
+        font-size: 16px;
+    }
+    #projects h2{
+        font-size: 1.2rem;
+    }
 }
 
 #skills{
@@ -110,24 +143,44 @@ header nav a{
 #projects{
     padding: 30px 50px;
     font-size: 16px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #projects .project_card{
     line-height: 30px;
 }
 
+#projects .links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .bold{
     font-weight: bold;
 }
 
-
-#blog{
-    padding: 30px 50px;
-    font-size: 20px;
-    height: 100vh;
+.project_card{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    padding: 30px;
 }
 
+.project_card a{
+    color: white;
+    background-color: var(--clr);
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+.project_card .project_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 30px;
+}
 
 #contact{
     padding: 30px 50px;

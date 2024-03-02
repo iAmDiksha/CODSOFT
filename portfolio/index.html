@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Londrina+Outline&family=Luckiest+Guy&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Reggae+One&display=swap');
     </style>
@@ -19,7 +21,6 @@
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#blog">Blogs</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -27,28 +28,29 @@
         <div id="home">
             <h1>Hey, I'm Diksha</h1>
             <h1>Frontend Developer</h1>
-            <a href="#"><button class="btn">Download Resume</button></a>
+            <a href="diksha.pdf" download="Diksha's Resume"><button class="btn">Download Resume</button></a>
         </div>
         </div>
         <div id="about">
             <h1>About Me</h1>
             <div class="article">
-                <p>Hey, I'm Diksha Jain, Passionate Frontend Developer Based in Rajasthan, India. I am currently pursuing MCA from LNCT college, Bhopal (MP). </p>
+                <p>👋 Hello there! I'm Diksha Jain, Passionate Frontend Developer Based in Rajasthan, India. I thrive on turning innovative ideas into user-friendly interfaces that leave a lasting impression. I am currently pursuing Master of Computer Applications at Laxmi Narayan College of Technology, Bhopal. Currently, I'm focused on building a strong foundation in Data Structures and Frontend Development. I solve coding problems on the platforms like Leetcode, GeeksForGeeks, Hackerrank, Coding Ninjas Studio.</p>
+                <p>I have build and worked on many projects, you can checkout those on my <a style="text-decoration: underline; color: blue;" href="https://github.com/iAmDiksha">Github</a> profile.</p>
             </div>
         </div>
         <div id="skills">
-            <h1>Skills, I am currently working with</h1>
+            <h1>My Skills</h1>
             <div class="skills_container">
                 <div class="card">
                     <p>HTML :</p>
                     <div class="out">
-                        <div class="in" style="width:80%"></div>
+                        <div class="in" style="width:85%"></div>
                     </div>
                 </div>
                 <div class="card">
                     <p>CSS :</p>
                     <div class="out">
-                        <div class="in" style="width:60%"></div>
+                        <div class="in" style="width:70%"></div>
                     </div>
                 </div>
                 <div class="card">
@@ -60,19 +62,19 @@
                 <div class="card">
                     <p>MySQL :</p>
                     <div class="out">
-                        <div class="in" style="width:70%"></div>
+                        <div class="in" style="width:40%"></div>
                     </div>
                 </div>
                 <div class="card">
                     <p>Tailwind CSS :</p>
                     <div class="out">
-                        <div class="in" style="width:80%"></div>
+                        <div class="in" style="width:70%"></div>
                     </div>
                 </div>
                 <div class="card">
                     <p>React :</p>
                     <div class="out">
-                        <div class="in" style="width:50%"></div>
+                        <div class="in" style="width:40%"></div>
                     </div>
                 </div>
                 <div class="card">
@@ -90,30 +92,66 @@
                 <div class="card">
                     <p>Java :</p>
                     <div class="out">
-                        <div class="in" style="width:40%"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <p>PHP :</p>
-                    <div class="out">
-                        <div class="in" style="width:25%"></div>
+                        <div class="in" style="width:30%"></div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="projects">
             <h1>My Work</h1>
-            <div class="project_card">
-                <h2>Online Food Ordering</h2>
-                <p>Developed an intuitive online food ordering website and an admin panel for monitoring.</p>
-                <p>Skills: JavaScript, CSS3, HTML5, PHP, PhpMyAdmin, MySQL</p>
-                <p class="bold">Nov 2022 - for Feb 2023</p>
-                <a href="#">Github</a>
-                <a href="#">Live Preview</a>
+            <div class="works">
+                <div class="project_card">
+                    <h2>Online Food Ordering</h2>
+                    <p>Developed an intuitive online food ordering website and an admin panel for monitoring.</p>
+                    <p>Skills: JavaScript, CSS3, HTML5, PHP, PhpMyAdmin, MySQL</p>
+                    <div class="project_flex">
+                        <div class="links">
+                        <!-- <a href="#">Github</a> -->
+                        <a href="#">Live Preview</a>
+                        </div>
+                        <p class="bold">Nov 2022 - for Feb 2023</p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="project_card">
+                    <h2>To Do App</h2>
+                    <p>Developed a todo app to manage task.</p>
+                    <p>Skills: React</p>
+                    <div class="project_flex">
+                        <div class="links">
+                            <a href="https://github.com/iAmDiksha/React_Todo_App">Github</a>
+                        <a href="https://react-todo-app-gilt-tau.vercel.app/">Live Preview</a>
+                        </div>
+                        <p class="bold">August 2023</p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="project_card">
+                    <h2>Weather App</h2>
+                    <p>The app fetches weather data from the OpenWeather API based on the user's input city and displays the current weather conditions along with an appropriate background image.</p>
+                    <p>Skills: HTML, CSS, Javascript</p>
+                    <div class="project_flex">
+                        <div class="links">
+                            <a href="https://github.com/iAmDiksha/weather_app">Github</a>
+                        <a href="https://iamdiksha.github.io/weather_app/">Live Preview</a>
+                        </div>
+                        <p class="bold">August 2023</p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="project_card">
+                    <h2>Tic Tac Toe</h2>
+                    <p>Developed a popular game named as Tic-Tac-Toe.</p>
+                    <p>Skills: React</p>
+                    <div class="project_flex">
+                        <div class="links">
+                            <a href="https://github.com/iAmDiksha/TicTacToe">Github</a>
+                        <a href="https://lively-druid-3cb57a.netlify.app/">Live Preview</a>
+                        </div>
+                        <p class="bold">August 2023</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="blog">
-            <h1>My Blogs</h1>
         </div>
         <div id="contact">
             <h1>Let's Connect ☺</h1>
@@ -121,7 +159,8 @@
                 <p><i class="fa-regular fa-envelope"></i> Email me at : dixapatni2687@gmail.com</p>
             </div>
             <div class="links">
-                <a href="https://www.linkedin.com/in/diksha-jain-35208a241/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/diksha-jain-35208a241/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/iAmDiksha"><i class="fa-brands fa-github"></i></a>
                 <a href="https://twitter.com/dikshaJain46"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
