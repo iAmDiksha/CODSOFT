@@ -28,6 +28,8 @@ header nav{
 header nav a{
     color: var(--clr);
     font-size: 20px;
+    padding:5px 15px;
+    border-radius: 30px;
 }
 
 #home{
@@ -39,6 +41,9 @@ header nav a{
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    text-align: center;
+    padding: 0 40px;
+    gap: 20px;
 }
 
 #home :nth-child(2)
@@ -67,6 +72,17 @@ header nav a{
     font-size: 20px;
 }
 
+.about_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.image img{
+    width: 300px;
+}
+
 #about h1, #skills h1, #projects h1, #contact h1{
     text-align: right;
     margin-right: 100px;
@@ -78,6 +94,9 @@ header nav a{
 @media (max-width:870px){
     #home{
         font-size: 2rem;
+    }
+    .about_flex{
+        flex-direction: column;
     }
 }
 
@@ -105,10 +124,55 @@ header nav a{
     p,a{
         font-size: 16px;
     }
+    header nav a{
+        font-size: 16px;
+    }
     #projects h2{
         font-size: 1.2rem;
     }
 }
+
+.icon{
+    display: none;
+    background-color: white
+}
+
+nav a:hover{
+    background-color: var(--clr);
+    color: white;
+}
+
+@media (max-width:500px) {
+    nav a{
+        display: none;
+    }
+    header{
+        background-color: transparent;
+    }
+    .icon{
+        display: inline-block;
+        width: 100%;
+        font-size: 25px;
+        text-align: end;
+        padding-right: 20px;
+    }
+    nav.active a{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    nav.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    }
+}
+
 
 #skills{
     padding: 30px 50px;
